@@ -1,0 +1,118 @@
+#essay h1, #essay h2, #essay h3 {
+  color: #fb6551;
+}
+
+#essay h2 {
+  margin-bottom: 0;
+}
+
+#essay p ~ h2 {
+  margin-top: 6rem;
+}
+
+#essay hr + h2 {
+  margin-top: 4rem;
+}
+
+#essay h2 + p {
+  margin-top: 1.45rem;
+}
+
+#essay h5 {
+  color: #2a0094;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+}
+
+#essay p {
+  color: inherit;
+  font-family: 'Avenir Next', sans-serif;
+  text-rendering: optimizeLegibility;
+  font-size: 1.8rem;
+  line-height: 1.3;
+  font-weight: 600;
+  margin-bottom: 2.2rem;
+}
+
+#essay p:nth-of-type(even) {
+  color: #1ab49b
+}
+
+#essay p:last-of-type {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 460px) {
+  #essay h1 {
+    font-size: 2rem;
+  }
+  
+  #essay h2 {
+    font-size: 1.8rem;
+  }
+  
+  #essay h3 {
+    font-size: 1.6rem;
+  }
+    
+  
+  #essay p {
+    font-size: 1.2rem;
+  }
+}
+
+#essay code {
+  font-size: 1.6rem;
+}
+
+.apply-image-layout .image-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.apply-image-layout img {
+  max-width: 34vw;
+  min-width: 0;
+  object-fit: contain;
+}
+
+.apply-image-layout figcaption {
+  color: #fb6551;
+  margin-top: -1.4rem;
+  margin-bottom: 1.45rem;
+}
+
+.apply-image-layout .essay-image-single  img {
+  max-width: 100%
+}
+
+.apply-image-layout .essay-image-single-center {
+  justify-content: center;
+}
+
+.embedded-vids {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.embedded-vids iframe:first-child {
+  margin-right: .25rem;
+}
+
+.essay-video-single {
+  width: 100%;
+  padding: 0;
+}
+
+.essay-video-double {
+  width: 49%;
+}
+
+.role-highlight {
+  color: #fb6551;
+}

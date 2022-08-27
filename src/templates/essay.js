@@ -4,6 +4,9 @@ import { Layout, NavFooter } from '../components'
 
 import './essay.css'
 
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
+deckDeckGoHighlightElement();
+
 const Essay = ({ data }) => {
   const post = data.markdownRemark;
   const imageLayoutClass = post.frontmatter.imgStyles ? 'apply-image-layout' : '';

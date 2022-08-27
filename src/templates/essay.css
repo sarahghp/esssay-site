@@ -1,3 +1,11 @@
+body {
+  --deckgo-highlight-code-font-size: 1.2rem;
+  --deckgo-highlight-code-margin: 2rem 0;
+  --deckgo-highlight-code-token-selector: #1ab49b;
+  --deckgo-highlight-code-token-function: #ff8d7d;
+  --deckgo-highlight-code-token-comment: #8694be;
+}
+
 #essay h1, #essay h2, #essay h3 {
   color: #fb6551;
 }

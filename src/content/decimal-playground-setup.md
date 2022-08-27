@@ -16,11 +16,11 @@ This is more a short narrative than a real tutorial, but I hope it gets you exci
 
 When beginning the project, the first thing I needed to wrap my head around was what the playground app needed to do at a high level. Because it needs to represent values that don't currently exist in Javascript, like the Decimal literal — `1.3456m` — the app needs to transform input text into Javascript that a web engine can execute.
 
-![](./img/00_little_flow.png)
+![](./img/00_little_flow_t.png)
 
 Users will also want to be able to see the results of running this code, which means we need to execute it and render the output. Luckily, since this is a web app, we have the execution context right there: the browser engine.
 
-![](./img/01_little_flow_2.png)
+![](./img/01_little_flow_2t.png)
 
 This is supported by using libraries that have implemented functionality similar to the two modes we are exploring: [Big.js](http://mikemcl.github.io/big.js/) for the BigDecimal option and [Decimal.js](https://mikemcl.github.io/decimal.js/) for the Decimal128 option.
 

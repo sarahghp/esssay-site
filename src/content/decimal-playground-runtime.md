@@ -18,7 +18,7 @@ For the playground to feel like a complete experience, we want to run the code f
 
 This is found in the [`src/runner/` directory of the playground code](https://github.com/sarahghp/decimal-playground/tree/main/src/runner), with the business end of running the code in [runner/index.js](https://github.com/sarahghp/decimal-playground/blob/main/src/runner/index.js). Here the transformed code is encoded as a base-64 data URI and imported into the `iframe` context defined in [runner/index.html](https://github.com/sarahghp/decimal-playground/blob/main/src/runner/index.html), which is what is displayed in the DOM pane. (The patched console is defined outside `src/runner/` in `src/results.js`, but it mostly just amalgamates the console content and renders it using `react-inspector`. This makes objects inspectable instead of printing them as strings.)
 
-![](./img/05_more_plumbing.png)
+![](./img/05_more_plumbing_t.png)
 
 ## Interpreting: The Three Interventions
 
@@ -35,7 +35,6 @@ Wrapped functions are the approach used for functions created to add extra conte
 In general, most functions in this approach apply to similar cases: they mirror checks and coercions present in the transform code for situations where a variable is used, so it can be resolved in the runtime. This includes binary and unary expressions and `Decimal` constructor coercions:
 
 ```js
-
 const a = 363.4m;
 
 // binary expressions

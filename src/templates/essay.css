@@ -36,10 +36,16 @@ body {
 #essay p, #essay a {
   font-family: 'Avenir Next', sans-serif;
   text-rendering: optimizeLegibility;
-  font-size: 1.8rem;
   line-height: 1.3;
   font-weight: 600;
   margin-bottom: 2.2rem;
+  font-size: 1.6rem;
+}
+
+#essay code {
+  font-size: 1.3rem;
+  color: #fb6551;
+  font-weight: 100;
 }
 
 #essay p:nth-of-type(even) {
@@ -63,17 +69,15 @@ body {
     font-size: 1.6rem;
   }
 
-
-  #essay p {
+  #essay p, #essay a {
     font-size: 1.2rem;
+  }
+
+  #essay code {
+    font-size: 1rem;
   }
 }
 
-#essay code {
-  font-size: 1.6rem;
-  color: #fb6551;
-  font-weight: 100;
-}
 
 #essay hr {
     border: none;

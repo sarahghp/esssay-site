@@ -10,7 +10,7 @@
   margin-top: 6rem;
 }
 
-#essay hr + h2 {
+#essay hr + h2, #essay h1 + p {
   margin-top: 4rem;
 }
 
@@ -25,8 +25,7 @@
   line-height: 1.8rem;
 }
 
-#essay p {
-  color: inherit;
+#essay p, #essay a {
   font-family: 'Avenir Next', sans-serif;
   text-rendering: optimizeLegibility;
   font-size: 1.8rem;
@@ -47,16 +46,16 @@
   #essay h1 {
     font-size: 2rem;
   }
-  
+
   #essay h2 {
     font-size: 1.8rem;
   }
-  
+
   #essay h3 {
     font-size: 1.6rem;
   }
-    
-  
+
+
   #essay p {
     font-size: 1.2rem;
   }
@@ -64,6 +63,23 @@
 
 #essay code {
   font-size: 1.6rem;
+  color: #fb6551;
+  font-weight: 100;
+}
+
+#essay hr {
+    border: none;
+    color: #fb6551;
+    text-align: center;
+    height: 0;
+    margin: 5rem 0;
+}
+
+#essay hr:after {
+    content: '✱✱✱';
+    padding: 0 4px;
+    position: relative;
+    top: -13px;
 }
 
 .apply-image-layout .image-wrapper {

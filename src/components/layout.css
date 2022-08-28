@@ -1,3 +1,19 @@
+::selection {
+  background: #1ab49b;
+}
+
+p::selection {
+    color: #fdf1f2;
+}
+
+a::selection {
+  color: rgb(255, 255, 0);
+}
+
+code::selection {
+  color: #ffcfeb;
+}
+
 html {
   font-family: 'Avenir Next', sans-serif;
   -ms-text-size-adjust: 100%;
